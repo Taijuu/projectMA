@@ -3,8 +3,19 @@
     border: 0;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+:target {
+    scroll-margin-top: .8em;
+}
+
 body {
-    background-color: #52796f;
+    background: linear-gradient(to bottom, #428569, #1c5221);
+    color: #fff;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     scrollbar-width: none;
@@ -28,29 +39,17 @@ body::-webkit-scrollbar-thumb:hover {
 
 header {
     display: flex;
-    background: #84a98c;
-    background: linear-gradient(0deg, #2f3e4600 0%, #344d50 100%);
+    gap: 10px;
+    background: #344d50;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    color: #FFF;
-}
+    padding: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 
-header:hover {
-    transition: .3s;
-    background-color: #354f52;
 }
-
-header:not(:hover) {
-    transition: .3s;
-}
-
-header h1 {
-    color: #fff;
-    padding-bottom: 10px;
-}
-
 
 nav ul {
     display: flex;
@@ -61,7 +60,7 @@ nav ul {
 nav ul a {
     position: relative;
     padding: 10px 10px 5px;
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
 }
@@ -91,31 +90,26 @@ nav ul a:hover:before {
 main {
     padding: 50px;
     text-align: center;
-    color: #000000;
 }
 
 section {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    color: #fff;
     gap: 3em;
 }
 
 section p {
-    color: #fff;
     text-align: left;
 }
 
 footer {
     padding: 20px;
     background-color: #2f3e46;
-    color: #FFF;
     text-align: center;
-    bottom: 0;
 }
 
 footer a {
     text-decoration: none;
-    color: #84a98c;
+    color: #00ff37;
 }
