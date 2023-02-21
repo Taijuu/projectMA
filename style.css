@@ -18,6 +18,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     background-color: #c1c1c1;
+    border-color: #52796f;
     border-radius: 2px;
 }
 
@@ -28,7 +29,7 @@ body::-webkit-scrollbar-thumb:hover {
 header {
     display: flex;
     background: #84a98c;
-    background: linear-gradient(0deg, hsl(201, 20%, 23%, 0) 0%, hsl(186, 21%, 26%, 1) 100%);
+    background: linear-gradient(0deg, #2f3e4600 0%, #344d50 100%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -97,16 +98,13 @@ section {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    color: #fff;
     gap: 3em;
 }
 
 section p {
     color: #fff;
     text-align: left;
-}
-
-section h1 {
-    color: #fff;
 }
 
 footer {
