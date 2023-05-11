@@ -42,7 +42,6 @@ body::-webkit-scrollbar-track {
 
 header {
     display: flex;
-    gap: 10px;
     background: #2f3e46;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +52,12 @@ header {
     top: 0;
 }
 
+header h1 {
+    font-size: 50px;
+}
+
 nav ul {
+    gap: 20px;
     display: flex;
     list-style: none;
     padding: 0;
@@ -61,10 +65,10 @@ nav ul {
 
 nav ul a {
     position: relative;
-    padding: 10px 10px 5px;
     color: #FFF;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
+    padding-bottom: 3px;
 }
 
 nav ul a:before {
@@ -85,12 +89,12 @@ nav ul a:before {
 
 nav ul a:hover:before {
     visibility: visible;
-    -webkit-transform: scaleX(.8);
-    transform: scaleX(.8);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 main {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -114,4 +118,40 @@ footer {
 footer a {
     text-decoration: none;
     color: #88ffaa;
+}
+
+@media screen and (max-width: 400px){
+    body {
+        font-size: 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 254px){
+    body {
+        font-size: 7px;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 3px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
 }
