@@ -14,7 +14,8 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #48914b, #125515);
+    background: rgb(57,92,80);
+background: linear-gradient(0deg, rgba(57,92,80,1) 0%, rgba(20,224,162,1) 100%);
     color: #fff;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
@@ -41,8 +42,12 @@ body::-webkit-scrollbar-track {
 }
 
 header {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 1px 5px 5px #1114115d;
     display: flex;
-    background: #2f3e46;
+    background: #ffff;
+    color: black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -65,7 +70,7 @@ nav ul {
 
 nav ul a {
     position: relative;
-    color: #FFF;
+    color: black;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
     padding-bottom: 3px;
@@ -79,7 +84,7 @@ nav ul a:before {
     border-radius: 3px;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #6ace6a;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -111,7 +116,9 @@ section p {
 
 footer {
     padding: 20px;
-    background-color: #252525;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: black;
     text-align: center;
 }
 
